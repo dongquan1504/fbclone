@@ -23,6 +23,7 @@ function Header() {
       <div className="flex items-center">
         <Image
           src="https://links.papareact.com/5me"
+          alt=""
           width={40}
           height={40}
           layout="fixed"
@@ -55,6 +56,7 @@ function Header() {
           onClick={signOut}
           className="rounded-full cursor-pointer"
           src={session.user.image}
+          alt=""
           width="40"
           height="40"
           layout="fixed"

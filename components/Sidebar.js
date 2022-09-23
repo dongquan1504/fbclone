@@ -30,7 +30,7 @@ function Sidebar() {
     <div className="p-2 mt-5 max-w-[300px] xl:min-w-[150px]">
       <SidebarRow src={session.user.image} title={session.user.name} />
       {MenuData.map((item) => (
-        <SidebarRow Icon={item.icon} title={item.title} />
+        <SidebarRow key={item.icon} Icon={item.icon} title={item.title} />
       ))}
     </div>
   );

@@ -6,6 +6,7 @@ function StoryCard({ name, src, profile }) {
       <Image
         className="absolute opacity-0 lg:opacity-100 rounded-full z-50 top-10"
         src={profile}
+        alt=""
         width={40}
         height={40}
         layout="fixed"
@@ -13,6 +14,7 @@ function StoryCard({ name, src, profile }) {
       />
       <Image
         className="object-cover filter brightness-75 rounded-full lg:rounded-3xl"
+        alt=""
         src={src}
         layout="fill"
       />

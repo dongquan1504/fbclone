@@ -79,6 +79,7 @@ function InputBox() {
     <div className="bg-white p-2 rounded-2xl shadow-md text-gray-600 font-medium mt-6">
       <div className="flex space-x-4 p-4 items-center">
         <Image
+        alt=""
           className="rounded-full"
           src={session.user.image}
           width={40}

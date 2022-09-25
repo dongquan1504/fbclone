@@ -1,5 +1,5 @@
-import NextAuth from "next-auth"
-import FacebookProvider from "next-auth/providers/facebook"
+import NextAuth from "next-auth";
+import FacebookProvider from "next-auth/providers/facebook";
 
 export const authOptions = {
   // Configure one or more authentication providers
@@ -10,6 +10,7 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
-}
+  secret: process.env.SECRET,
+};
 
-export default NextAuth(authOptions)
+export default NextAuth(authOptions);
